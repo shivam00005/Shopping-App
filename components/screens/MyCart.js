@@ -46,7 +46,7 @@ const MyCart = ({navigation}) => {
     }
   };
 
-  //get total price of all items in the cart
+  //** get total price of all items in the cart **
   const getTotal = productData => {
     let total = 0;
     for (let index = 0; index < productData.length; index++) {
