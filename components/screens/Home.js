@@ -52,6 +52,7 @@ const Home = ({navigation}) => {
 
   const ProductCard = ({data}) => {
         return (
+          
       <TouchableOpacity
         onPress={() => navigation.navigate('ProductInfo', {productID: data.id})}
         style={{
