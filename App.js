@@ -11,11 +11,16 @@ const App = () => {
   const Stack = createNativeStackNavigator();
 
   return (
-
-    <View>
-      <Text>React Native App</Text>
-    </View>
-
+    <NavigationContainer> 
+      <Stack.Navigator
+      screenOptions = {{
+           headerShown: false,
+        }}>
+        <Stack.Screen name = "Home" component={Home}/>
+        <Stack.Screen name = "MyCart" component={MyCart}/>
+        <Stack.Screen name = "ProductInfo" component={ProductInfo}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
 
