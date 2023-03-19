@@ -24,6 +24,7 @@ const Home = ({navigation}) => {
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       getDataFromDB();
+      
     });
 
     return unsubscribe;
