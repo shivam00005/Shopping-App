@@ -57,6 +57,7 @@ const ProductInfo = ({route, navigation}) => {
     if (itemArray) {
       let array = itemArray;
       array.push(id);
+      
 
       try {
         await AsyncStorage.setItem('cartItems', JSON.stringify(array));
