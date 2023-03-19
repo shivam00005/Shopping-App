@@ -12,8 +12,6 @@ import {COLOURS, Items} from '../database/Database';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-
-
 const MyCart = ({navigation}) => {
   const [product, setProduct] = useState();
   const [total, setTotal] = useState(null);
